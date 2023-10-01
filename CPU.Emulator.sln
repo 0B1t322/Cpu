@@ -1,11 +1,13 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# 
+#
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{32697960-7AE8-4ABB-81A0-DDC10BB921F9}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CPU.Emulator.ConsoleApp", "src\CPU.Emulator.ConsoleApp\CPU.Emulator.ConsoleApp.csproj", "{A4AD59F1-3DDC-434A-B069-F91007014FA5}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CPU.Emulator", "src\CPU.Emulator\CPU.Emulator.csproj", "{B8B2381E-98D7-4683-9BB9-556AEF693248}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CPU.Emulator.ConsoleApp.Assambler", "src\CPU.Emulator.ConsoleApp.Assambler\CPU.Emulator.ConsoleApp.Assambler.csproj", "{C766E4FE-3A2B-4A62-B769-7D12BD5B7694}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -41,9 +43,22 @@ Global
 		{B8B2381E-98D7-4683-9BB9-556AEF693248}.Release|x64.Build.0 = Release|Any CPU
 		{B8B2381E-98D7-4683-9BB9-556AEF693248}.Release|x86.ActiveCfg = Release|Any CPU
 		{B8B2381E-98D7-4683-9BB9-556AEF693248}.Release|x86.Build.0 = Release|Any CPU
+		{C766E4FE-3A2B-4A62-B769-7D12BD5B7694}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C766E4FE-3A2B-4A62-B769-7D12BD5B7694}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C766E4FE-3A2B-4A62-B769-7D12BD5B7694}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{C766E4FE-3A2B-4A62-B769-7D12BD5B7694}.Debug|x64.Build.0 = Debug|Any CPU
+		{C766E4FE-3A2B-4A62-B769-7D12BD5B7694}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{C766E4FE-3A2B-4A62-B769-7D12BD5B7694}.Debug|x86.Build.0 = Debug|Any CPU
+		{C766E4FE-3A2B-4A62-B769-7D12BD5B7694}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C766E4FE-3A2B-4A62-B769-7D12BD5B7694}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C766E4FE-3A2B-4A62-B769-7D12BD5B7694}.Release|x64.ActiveCfg = Release|Any CPU
+		{C766E4FE-3A2B-4A62-B769-7D12BD5B7694}.Release|x64.Build.0 = Release|Any CPU
+		{C766E4FE-3A2B-4A62-B769-7D12BD5B7694}.Release|x86.ActiveCfg = Release|Any CPU
+		{C766E4FE-3A2B-4A62-B769-7D12BD5B7694}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{A4AD59F1-3DDC-434A-B069-F91007014FA5} = {32697960-7AE8-4ABB-81A0-DDC10BB921F9}
 		{B8B2381E-98D7-4683-9BB9-556AEF693248} = {32697960-7AE8-4ABB-81A0-DDC10BB921F9}
+		{C766E4FE-3A2B-4A62-B769-7D12BD5B7694} = {32697960-7AE8-4ABB-81A0-DDC10BB921F9}
 	EndGlobalSection
 EndGlobal

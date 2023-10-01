@@ -2,9 +2,9 @@ namespace CPU.Emulator.Commands;
 
 public struct Command
 {
-    public readonly Instruction Instruction;
-    public readonly ushort RegisterAddress;
-    public readonly short Literal;
+    public Instruction Instruction;
+    public ushort RegisterAddress;
+    public short Literal;
 
     public Command(Instruction instruction, ushort registerAddress = 0,
         short literal = 0)
@@ -58,5 +58,11 @@ public struct Command
                   RegisterAddress;
 
         return cmd;
+    }
+
+    public override string ToString()
+    {
+        return
+            $"Instruction={this.Instruction} RegisterAddress={this.RegisterAddress} Literal={this.Literal}";
     }
 }
