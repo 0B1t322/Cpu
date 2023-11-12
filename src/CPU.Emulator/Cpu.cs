@@ -199,7 +199,6 @@ public class Cpu : ICpu
     public Command ReadCommand()
     {
         var cmd = _instructionMemory.Get(_programmCounter);
-        // _tasks.Enqueue(() => _programmCounter += 1);
         return new Command(cmd);
     }
 
@@ -344,7 +343,7 @@ public class Cpu : ICpu
         b.Append("\n");
         b.Append("Registers\n");
         b.Append("-------------------\n");
-        b.Append(_registers.ToString());
+        b.Append(_registers.ToString((u) => (RegistersAddress)u));
         b.Append("\n");
 
         return b.ToString();

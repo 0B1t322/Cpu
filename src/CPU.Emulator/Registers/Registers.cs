@@ -46,9 +46,12 @@ public class Registers : IRegisters
 
     private ushort MaxAddress => (ushort)(_maxRegisters - 1);
 
-    public override string ToString()
+    public override string ToString() => ToString((u => u));
+
+    public string ToString<TOutType>(Func<uint, TOutType> keyMapper)
     {
         return string.Join("\n",
-            _registers.Select(kvp => $"{kvp.Key}\t{kvp.Value.Value}"));
+            _registers.Select(kvp =>
+                $"{keyMapper(kvp.Key)}\t{kvp.Value.Value}"));
     }
 }

@@ -8,7 +8,10 @@
     </PropertyGroup>
 
     <ItemGroup>
-      <ProjectReference Include="..\CPU.Emulator\CPU.Emulator.csproj" />
+        <ProjectReference Include="..\CPU.Emulator\CPU.Emulator.csproj" />
+        <Content Include="max_in_mass.txt">
+            <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+        </Content>
     </ItemGroup>
 
 </Project>
