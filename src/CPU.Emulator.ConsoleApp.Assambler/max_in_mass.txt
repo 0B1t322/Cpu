@@ -1,15 +1,17 @@
 Program segment 'PROGRAM' begin
-    sl 0x0, d
-    sl 0x9, e
-    lm d
-    sub b
-    jlz 0x7
-    add b
-    ma b
-    inc d
-    dec e
-    jgz 0x2
-    stop
+   sl 0x0, d
+   lm d
+   ma e
+   inc d
+   lm d
+   sub b
+   jlz 0x9
+   add b
+   ma b
+   inc d
+   dec e
+   jgz 0x4
+   stop
 end
 
 Data segment 'DATA' begin
