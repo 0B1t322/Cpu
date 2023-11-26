@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CPU.Emulator", "src\CPU.Emu
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CPU.Emulator.ConsoleApp.Assambler", "src\CPU.Emulator.ConsoleApp.Assambler\CPU.Emulator.ConsoleApp.Assambler.csproj", "{C766E4FE-3A2B-4A62-B769-7D12BD5B7694}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CPU.Internal.Testing", "src\CPU.Internal.Testing\CPU.Internal.Testing.csproj", "{FC745710-8C77-4CA9-9B74-ED87896E1E70}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -55,6 +57,18 @@ Global
 		{C766E4FE-3A2B-4A62-B769-7D12BD5B7694}.Release|x64.Build.0 = Release|Any CPU
 		{C766E4FE-3A2B-4A62-B769-7D12BD5B7694}.Release|x86.ActiveCfg = Release|Any CPU
 		{C766E4FE-3A2B-4A62-B769-7D12BD5B7694}.Release|x86.Build.0 = Release|Any CPU
+		{FC745710-8C77-4CA9-9B74-ED87896E1E70}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FC745710-8C77-4CA9-9B74-ED87896E1E70}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FC745710-8C77-4CA9-9B74-ED87896E1E70}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{FC745710-8C77-4CA9-9B74-ED87896E1E70}.Debug|x64.Build.0 = Debug|Any CPU
+		{FC745710-8C77-4CA9-9B74-ED87896E1E70}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{FC745710-8C77-4CA9-9B74-ED87896E1E70}.Debug|x86.Build.0 = Debug|Any CPU
+		{FC745710-8C77-4CA9-9B74-ED87896E1E70}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FC745710-8C77-4CA9-9B74-ED87896E1E70}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FC745710-8C77-4CA9-9B74-ED87896E1E70}.Release|x64.ActiveCfg = Release|Any CPU
+		{FC745710-8C77-4CA9-9B74-ED87896E1E70}.Release|x64.Build.0 = Release|Any CPU
+		{FC745710-8C77-4CA9-9B74-ED87896E1E70}.Release|x86.ActiveCfg = Release|Any CPU
+		{FC745710-8C77-4CA9-9B74-ED87896E1E70}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{A4AD59F1-3DDC-434A-B069-F91007014FA5} = {32697960-7AE8-4ABB-81A0-DDC10BB921F9}

@@ -3,14 +3,16 @@ Program segment 'PROGRAM' begin
    lm d
    ma e
    inc d
+LOAD_NEXT:
    lm d
    sub b
-   jlz 0x9
+   jlz CONTINUE
    add b
    ma b
+CONTINUE:
    inc d
    dec e
-   jgz 0x4
+   jgz LOAD_NEXT
    stop
 end
 
