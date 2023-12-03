@@ -30,6 +30,13 @@ public class Memory : IDataMemory, IInstructionMemory
         set => Set(addr, value);
     }
 
+    public string ToString<TKOutType, TVOutType>(Func<uint, TKOutType> keyMapper, Func<int, TVOutType> valueMapper)
+    {
+        return string.Join("\n",
+            _memory.Select(kvp =>
+                $"{keyMapper(kvp.Key)}\t{valueMapper(kvp.Value)}"));
+    }
+
     public override string? ToString()
     {
         return string.Join("\n",

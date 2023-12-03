@@ -6,4 +6,7 @@ public interface IDataMemory
     public void Set(uint addr, int value);
 
     public int this[uint addr] { get; set; }
+
+    public string ToString<TKOutType, TVOutType>(
+        Func<uint, TKOutType> keyMapper, Func<int, TVOutType> valueMapper);
 }

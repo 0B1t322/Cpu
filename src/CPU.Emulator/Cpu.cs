@@ -335,11 +335,11 @@ public class Cpu : ICpu
         b.Append($"ProgramCounter: {_programmCounter}\n");
         b.Append("InstructionMemory\n");
         b.Append("-------------------\n");
-        b.Append(_instructionMemory.ToString());
+        b.Append(_instructionMemory.ToString((k) => $"{k}", (v) => $"0x{Convert.ToString(v, 16)}"));
         b.Append("\n");
         b.Append("DataMemory\n");
         b.Append("-------------------\n");
-        b.Append(_dataMemory.ToString());
+        b.Append(_dataMemory.ToString((k) => $"{k}", (v) => $"0x{Convert.ToString(v, 16)}"));
         b.Append("\n");
         b.Append("Registers\n");
         b.Append("-------------------\n");
